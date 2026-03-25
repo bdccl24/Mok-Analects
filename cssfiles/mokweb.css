@@ -1,21 +1,94 @@
-html{
-    scroll-behavior: smooth;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    color: black;
+    background-color: #f0f0f0;
 }
-a.returnbutton{
-    color:black;
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr;  
+    grid-template-columns: 250px 1fr; 
+    height: 100vh;
+    margin: none;
+    overflow: hidden;
 }
-a{
+
+.header {
+    grid-column: 1 / -1;
+    background-color: #DDDDDD;
+    color: black;
+    padding: 20px;
+    font-size: 24px
+}
+
+.header-title {
+    margin: 0;
+    font-size: 36px;
     text-decoration: none;
-    color:rgb(52, 137, 255);
+    color: black;
+    font-size: 48px;
 }
-a.redirect{
-    text-decoration: underline;
+
+.nav {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 1rem;
+    overflow-y: auto;
 }
+
+.content {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
 p{
     background-color: rgba(255, 233, 155, 0.86);
     padding: 5px 100px;
     line-height: 40px;
-    border-radius: 7px;
+    border-radius: 10px;
     border-style: dotted;
     border-width: 3px;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 20px;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+a.pagelink{
+    text-decoration: none;
+    color:rgb(52, 137, 255);
+}
+
+a.pagelink:hover {
+    text-decoration: underline;
+    list-style-type: disc;
+}
+
+a.redirect{
+    text-decoration: underline;
+}
+
+a.returnbutton {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    border: black solid 2px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+a.returnbutton:hover {
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
 }
