@@ -5,62 +5,81 @@
     <link rel="stylesheet" href="cssfiles/photolib.css">
 </head>
 <body>
-    <div>
-        <a href="index.html">Back to Homepage</a>
-    </div>
-    <h1>《4A史記》照片集  4Analects Photo Library</h1>
-    <div id="polarph">
-        <h2>Polar</h2>
-        <div class="imagegrid" style="display: grid; justify-content: flex-start;">
-            <figure class="gfigure">
-                <img class="gimage" src="photos/nerdpolar.jpg">
-                <figcaption class="fcaption" >Nerd Polar</figcaption>
-            </figure>
-            <figure class="gfigure">
-                <img class="gimage" src="./photos/phylabfront.jpeg">
-                <figcaption class="fcaption" >Front View of Polar in Phy Lab</figcaption>
-            </figure>
-            <figure class="gfigure">
-                <img class="gimage" src="photos/phylabside.jpeg">
-                <figcaption class="fcaption">Side View of Polar in Phy Lab</figcaption>
-            </figure>
-            <figure class="gfigure">
-                <img class="gimage" src="photos/withmok.jpeg">
-                <figcaption class="fcaption" >Polar with Mr. Mok</figcaption>
-            </figure>
-            <figure class="gfigure">
-                <img class="gimage" src="photos/closeuppolar.jpg">
-                <figcaption class="fcaption">Close up of Polar</figcaption>
-            </figure>
-            <figure class="gfigure">
-                <img class="gimage" src="photos/heldplasticpolarfront.JPG">
-                <figcaption class="fcaption">Front View of Plastic-wrapped Polar</figcaption>
-            </figure>
-            <figure class="gfigure">
-                <img class="gimage" src="photos/heldplasticpolarside1.JPG">
-                <figcaption class="fcaption">Side View of Plastic-wrapped Polar</figcaption>
-            </figure>
-            <figure class="gfigure">
-                <img class="gimage" src="photos/heldplasticpolarside2.JPG">
-                <figcaption class="fcaption">Side View of Plastic-wrapped Polar</figcaption>
-            </figure>
-            <figure class="gfigure">
-                <img class="gimage" src="photos/mokholdpolar.JPG">
-                <figcaption class="fcaption">Mr. Mok holding Polar up</figcaption>
-            </figure>
-            <figure class="gfigure">
-                <img class="gimage" src="photos/polarmarshmallow.JPG">
-                <figcaption class="fcaption">Polar with marshmallows</figcaption>
-            </figure>
-            <figure class="gfigure">
-                <img class="gimage" src="photos/polarwithtie.jpg">
-                <figcaption class="fcaption">Polar wearing a tie</figcaption>
-            </figure>
-            <figure class="gfigure">
-                <img class="gimage" src="photos/sidewayspolar.JPG">
-                <figcaption class="fcaption">Polar but sideways</figcaption>
-            </figure>
-        </div>    
+    <!--<div>
+        <a class="homepagelink" href="index.html">Back to Homepage</a>
+    </div>-->
+    <div class="grid-container">
+        <div class="header">
+            <h1><a href="index.html" class="header-title">欸語 4Analects</a></h1>
+        </div>
+        <div class="pagetitle">
+            <h2 class="pagetitleh2">《4A史記》照片集  4Analects Photo Library </h2>
+        </div>
+        <div id="imagelibcontainer">
+            <div class="contentcontainer">
+                <div class="nav">
+                    <ul id="navlist">
+                        <li class="title">Navigation</li>
+                        <hr>
+                        <li class="linkcontain"><a href="#polar" class="pagelink">Polar</a></li>
+                        <hr>
+                    </ul>
+                </div>
+                <div class="imagegridcontainer" id="polar">
+                    <h2 name="polartitle">Polar</h2>
+                    <div class="imagegrid" style="display: grid; justify-content: flex-start;">
+                        <figure class="gfigure">
+                            <img class="gimage" src="photos/nerdpolar.jpg">
+                            <figcaption class="fcaption" >Nerd Polar</figcaption>
+                        </figure>
+                        <figure class="gfigure">
+                            <img class="gimage" src="./photos/phylabfront.jpeg">
+                            <figcaption class="fcaption" >Front View of Polar in Phy Lab</figcaption>
+                        </figure>
+                        <figure class="gfigure">
+                            <img class="gimage" src="photos/phylabside.jpeg">
+                            <figcaption class="fcaption">Side View of Polar in Phy Lab</figcaption>
+                        </figure>
+                        <figure class="gfigure">
+                            <img class="gimage" src="photos/withmok.jpeg">
+                            <figcaption class="fcaption" >Polar with Mr. Mok</figcaption>
+                        </figure>
+                        <figure class="gfigure">
+                            <img class="gimage" src="photos/closeuppolar.jpg">
+                            <figcaption class="fcaption">Close up of Polar</figcaption>
+                        </figure>
+                        <figure class="gfigure">
+                            <img class="gimage" src="photos/heldplasticpolarfront.JPG">
+                            <figcaption class="fcaption">Front View of Plastic-wrapped Polar</figcaption>
+                        </figure>
+                        <figure class="gfigure">
+                            <img class="gimage" src="photos/heldplasticpolarside1.JPG">
+                            <figcaption class="fcaption">Side View of Plastic-wrapped Polar</figcaption>
+                        </figure>
+                        <figure class="gfigure">
+                            <img class="gimage" src="photos/heldplasticpolarside2.JPG">
+                            <figcaption class="fcaption">Side View of Plastic-wrapped Polar</figcaption>
+                        </figure>
+                        <figure class="gfigure">
+                            <img class="gimage" src="photos/mokholdpolar.JPG">
+                            <figcaption class="fcaption">Mr. Mok holding Polar up</figcaption>
+                        </figure>
+                        <figure class="gfigure">
+                            <img class="gimage" src="photos/polarmarshmallow.JPG">
+                            <figcaption class="fcaption">Polar with marshmallows</figcaption>
+                        </figure>
+                        <figure class="gfigure">
+                            <img class="gimage" src="photos/polarwithtie.jpg">
+                            <figcaption class="fcaption">Polar wearing a tie</figcaption>
+                        </figure>
+                        <figure class="gfigure">
+                            <img class="gimage" src="photos/sidewayspolar.JPG">
+                            <figcaption class="fcaption">Polar but sideways</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>    
+        </div>
     </div>
 </body>
 </html>
